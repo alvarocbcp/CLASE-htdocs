@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuacion Segundo Grado</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .contenedor{
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 60%;
+            height: 300px;
+            margin: 40px auto;
+            border: 1px solid black;
+        }
+        .contenedor h2{
+            font-size: 2.5rem;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            height: 150px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        form input[type="submit"]{
+            width: 48%;
+            background-color: lightgrey;
+            color: green;
+            border: 1px solid black;
+            padding: 0.4em;
+        }
+        form input[type="reset"]{
+            width: 48%;
+            background-color: lightgrey;
+            color: green;
+            border: 1px solid black;
+            padding: 0.4em;
+        }
+        form input[type="text"]{
+            padding: 0.2em;
+            background-color: lightgrey;
+            border: 1px solid black;
+            outline: none;
+        }
+        form input[type="text"]::placeholder{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Ecuacion 2º Grado</h2>
+        <h3>ax<sup>2</sup> + bx + c = 0</h3>
+        <form action="Ecuacion.php" method="post">
+            <input type="text" id="campo1" name="campo1" placeholder="a"/>
+            <input type="text" id="campo2" name="campo2" placeholder="b"/>
+            <input type="text" id="campo3" name="campo3" placeholder="c"/>
+            <div class="botones">
+                <input type="reset" value="Borrar">
+                <input type="submit" value="Enviar"/>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
